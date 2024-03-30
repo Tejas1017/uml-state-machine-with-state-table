@@ -255,11 +255,11 @@ void eventDispatch() {
 
     ee = EXIT;
     //c.activeState = curr;
-    eha= c.state_table[curr*maxEvent+ee];
+    eha= c.state_table[curr*maxEvent+ee];//first previus active state exit need to be exe before transition ee store exit event of current state
     eha();
     ee = ENTRY;
     //c.activeState = target;
-    eha =c.state_table[target*maxEvent+ee];
+    eha =c.state_table[target*maxEvent+ee];//after exe exit event of perious state we need to exe entry event of target state 2d array make it ez to find target state exit event function handler
     //statMachine();
     eha();
   }
