@@ -33,7 +33,7 @@ struct p1 {
 };
 
 // Global variables
-event_t ee = ENTRY;
+event_t ee = ENTRY;//ee is event variable which show which is current event ....i should have used structure embedding concept for this 
 p1 c = {.count = 0, .activeState = idle};
 
 // Function prototypes
