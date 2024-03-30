@@ -29,7 +29,7 @@ typedef enum {
 struct p1 {
   int count;
   state_t activeState;
-  uintptr_t *state_table;
+  uintptr_t *state_table;//pointing to 2d array
 };
 
 // Global variables
