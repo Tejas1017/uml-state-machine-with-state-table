@@ -38,7 +38,7 @@ p1 c = {.count = 0, .activeState = idle};
 
 // Function prototypes
 void eventDispatch();
-event_status_t statMachine();
+//event_status_t statMachine();
 typedef event_status_t (*eHandler)();
 eHandler ehandler; 
 
